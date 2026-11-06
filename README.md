@@ -12,6 +12,14 @@ This repository is named for GitHub Pages. In **Settings → Pages**, select **D
 
 The page uses no build step or runtime dependencies. Update `index.html` to personalize the copy and links.
 
+## AI Learning
+
+`ai-learning.html` is a separate page linked from the shared Home / AI Learning
+navigation. It includes a four-stage roadmap, links to official Python, Google,
+PyTorch, and Hugging Face learning resources, and suggested practice projects.
+Edit that file to update the roadmap and resource links. Both pages share
+`styles.css` and `script.js`; the game script loads only on the homepage.
+
 ## Game widget
 
 The Play section includes an original Tetris-style falling-block game with a

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f5f2">
+    <meta name="description" content="An AI learning roadmap from Python foundations to machine learning, neural networks, and language model projects.">
+    <title>AI Learning &mdash; Peter Zou</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="./" aria-label="Peter Zou, home">PZ<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false"
+        aria-controls="site-nav" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="./">Home</a>
+        <a href="ai-learning.html" aria-current="page">AI Learning</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#practice">Practice</a>
+        <a class="nav-cta" href="https://github.com/v-peterzou" target="_blank" rel="noreferrer">
+          GitHub <span aria-hidden="true">&nearr;</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero learning-hero" id="top" aria-labelledby="learning-title">
+        <div class="hero-orb" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow hero-reveal">A SPACE TO LEARN &amp; EXPERIMENT</p>
+          <h1 class="hero-reveal" id="learning-title">AI, one step<br>at a time<span class="period">.</span></h1>
+          <p class="hero-intro hero-reveal">
+            From the first principles to the first project. A starting point for
+            learning how intelligent systems work.
+          </p>
+          <a class="text-link hero-reveal" href="#roadmap">
+            Explore the roadmap <span class="arrow" aria-hidden="true">&darr;</span>
+          </a>
+        </div>
+        <div class="hero-bottom" aria-hidden="true">
+          <span>UNDERSTAND. BUILD. REPEAT.</span>
+          <span>SCROLL TO EXPLORE <span class="arrow">&darr;</span></span>
+        </div>
+      </section>
+
+      <section class="section-wrap learning-roadmap" id="roadmap" aria-labelledby="roadmap-title">
+        <div class="section-label reveal">
+          <span class="section-number">01</span>
+          <span>THE LEARNING PATH</span>
+        </div>
+        <div class="learning-content">
+          <div class="learning-heading reveal">
+            <h2 id="roadmap-title">Start simple.<br>Go deeper<span class="period">.</span></h2>
+            <p>
+              Work through these stages in order, or jump in where you feel comfortable.
+              These are suggested steps, not a record of completed coursework.
+            </p>
+          </div>
+          <ol class="roadmap-list">
+            <li class="roadmap-card reveal">
+              <p class="eyebrow">STAGE 01 &middot; FOUNDATIONS</p>
+              <h3>Get comfortable with the basics.</h3>
+              <p>Practice Python functions, collections, and reading data. Review vectors,
+                matrices, probability, and derivatives as you need them.</p>
+              <a class="resource-link" href="https://docs.python.org/3/tutorial/" target="_blank" rel="noreferrer">
+                The Python Tutorial <span aria-hidden="true">&nearr;</span>
+              </a>
+              <p class="resource-note">Official Python documentation. Best if you already know a little programming.</p>
+              <p class="stage-goal"><strong>Try it:</strong> Read a CSV file and summarize a few columns.</p>
+            </li>
+            <li class="roadmap-card reveal">
+              <p class="eyebrow">STAGE 02 &middot; MACHINE LEARNING</p>
+              <h3>Learn what a model actually learns.</h3>
+              <p>Explore regression, classification, loss, and overfitting. Keep training
+                and test data separate, and compare a model against a simple baseline.</p>
+              <a class="resource-link" href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noreferrer">
+                Google Machine Learning Crash Course <span aria-hidden="true">&nearr;</span>
+              </a>
+              <p class="resource-note">Concept explanations and exercises from Google.</p>
+              <p class="stage-goal"><strong>Try it:</strong> Train a small classifier and explain its mistakes.</p>
+            </li>
+            <li class="roadmap-card reveal">
+              <p class="eyebrow">STAGE 03 &middot; DEEP LEARNING</p>
+              <h3>Build a network from the inside out.</h3>
+              <p>Learn tensors, automatic differentiation, and training loops.
+                Track validation performance rather than only training loss.</p>
+              <a class="resource-link" href="https://pytorch.org/tutorials/beginner/basics/intro.html" target="_blank" rel="noreferrer">
+                PyTorch: Learn the Basics <span aria-hidden="true">&nearr;</span>
+              </a>
+              <p class="resource-note">An introduction to a complete machine learning workflow with PyTorch.</p>
+              <p class="stage-goal"><strong>Try it:</strong> Train an image classifier and inspect incorrect predictions.</p>
+            </li>
+            <li class="roadmap-card reveal">
+              <p class="eyebrow">STAGE 04 &middot; LANGUAGE MODELS</p>
+              <h3>Turn models into useful experiments.</h3>
+              <p>Explore tokenization, transformers, and pretrained models. Then study
+                retrieval, evaluation, and the limits of generated answers.</p>
+              <a class="resource-link" href="https://huggingface.co/learn/llm-course/chapter1/1" target="_blank" rel="noreferrer">
+                Hugging Face LLM Course <span aria-hidden="true">&nearr;</span>
+              </a>
+              <p class="resource-note">A course on language models and the Hugging Face ecosystem.</p>
+              <p class="stage-goal"><strong>Try it:</strong> Build a small text tool and test it on difficult examples.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section-wrap learning-practice" id="practice" aria-labelledby="practice-title">
+        <div class="section-label reveal">
+          <span class="section-number">02</span>
+          <span>MAKE IT YOUR OWN</span>
+        </div>
+        <div class="learning-content">
+          <div class="learning-heading reveal">
+            <h2 id="practice-title">Less collecting.<br>More creating<span class="period">.</span></h2>
+            <p>Small, finished experiments teach more than an endless reading list.
+              Pick one question, build something, and write down what you discover.</p>
+          </div>
+          <div class="practice-grid">
+            <article class="practice-card reveal">
+              <span class="section-number">01 / EXPERIMENT</span>
+              <h3>Keep a learning notebook.</h3>
+              <p>Record the question, dataset, baseline, result, and one thing you would change.
+                Keep the experiment small enough to reproduce.</p>
+            </article>
+            <article class="practice-card reveal">
+              <span class="section-number">02 / EVALUATE</span>
+              <h3>Build a document Q&amp;A demo.</h3>
+              <p>Use public or synthetic documents, show supporting passages, and test questions
+                with no answer. Never upload private data without permission.</p>
+            </article>
+          </div>
+          <p class="learning-footnote">
+            Resource links open in a new tab. Hosted notebooks or model APIs may require
+            an account or incur costs; check their terms before using them.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="./" aria-label="Peter Zou, home">PZ<span>.</span></a>
+      <p>&copy; <span id="year">2026</span> Peter Zou</p>
+      <a href="#top" class="back-to-top">Back to top <span aria-hidden="true">&uarr;</span></a>
+    </footer>
+  </body>
+</html>
