@@ -11,6 +11,7 @@
     <title>Peter Zou — Personal site</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="game.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -29,6 +30,7 @@
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#around">Around the web</a>
+        <a href="#play">Play</a>
         <a class="nav-cta" href="https://github.com/v-peterzou" target="_blank" rel="noreferrer">
           GitHub <span aria-hidden="true">↗</span>
         </a>
@@ -48,7 +50,7 @@
             Take a look <span class="arrow" aria-hidden="true">↓</span>
           </a>
         </div>
-        <p class="hero-index" aria-hidden="true">01 / 03</p>
+        <p class="hero-index" aria-hidden="true">01 / 04</p>
         <div class="hero-bottom" aria-hidden="true">
           <span>INDEPENDENTLY YOURS</span>
           <span>SCROLL TO EXPLORE <span class="arrow">↓</span></span>
@@ -97,6 +99,49 @@
             <span class="github-card-description">Projects, experiments, and open source.</span>
             <span class="github-card-link">Visit my profile <span aria-hidden="true">→</span></span>
           </a>
+        </div>
+      </section>
+
+      <section class="play section-wrap" id="play" aria-labelledby="play-title">
+        <div class="section-label">
+          <span class="section-number">03</span>
+          <span>A LITTLE BREAK</span>
+        </div>
+        <div class="play-content">
+          <h2 id="play-title">One more block<span class="period">.</span></h2>
+          <p class="play-intro">A small falling-block game. Stack, clear, repeat.</p>
+          <div class="game-widget" aria-label="Falling-block game">
+            <div class="game-layout">
+              <canvas id="game-board" width="300" height="600" tabindex="0"
+                role="img" aria-label="Game board, 10 columns by 20 rows"
+                aria-describedby="game-instructions game-status">
+                This game requires a browser with canvas support.
+              </canvas>
+              <div class="game-sidebar">
+                <p class="game-label">SCORE <strong id="game-score">0</strong></p>
+                <p class="game-label">LINES <strong id="game-lines">0</strong></p>
+                <p class="game-label">LEVEL <strong id="game-level">1</strong></p>
+                <p class="game-label">NEXT</p>
+                <canvas id="game-next" width="120" height="120" role="img"
+                  aria-label="Next piece preview"></canvas>
+                <button type="button" id="game-start">Start game</button>
+                <button type="button" id="game-pause" disabled>Pause</button>
+              </div>
+            </div>
+            <p id="game-status" role="status" aria-live="polite">Ready when you are.</p>
+            <div class="game-controls" aria-label="Touch game controls">
+              <button type="button" data-game-action="left" aria-label="Move left">←</button>
+              <button type="button" data-game-action="rotate" aria-label="Rotate piece">↻</button>
+              <button type="button" data-game-action="right" aria-label="Move right">→</button>
+              <button type="button" data-game-action="down" aria-label="Move down">↓</button>
+              <button type="button" data-game-action="drop">Drop</button>
+            </div>
+            <p id="game-instructions">
+              Focus the board to play. ← → move · ↑ rotate · ↓ soft drop · Space drop · P pause.
+              The game pauses when you leave it.
+            </p>
+            <noscript><p>Enable JavaScript to play this game.</p></noscript>
+          </div>
         </div>
       </section>
 
