@@ -133,13 +133,13 @@ function setupBlockGame(widget) {
   }
 
   const game = new BlockGame();
-  const colors = ["", "#8ad5d9", "#92a9ed", "#edb77a", "#e9da88", "#c4f06a", "#c3a0e3", "#e9a0a0"];
+  const colors = ["", "#35d7e8", "#718cff", "#ffae58", "#ffe46c", "#59e1b5", "#c58bff", "#ff729f"];
   let frame = 0;
   let lastTime = 0;
   let elapsed = 0;
 
   const paintCell = (ctx, x, y, value, size, ghost = false) => {
-    ctx.fillStyle = ghost ? "#424b35" : colors[value];
+    ctx.fillStyle = ghost ? "#253754" : colors[value];
     ctx.fillRect(x * size + 1, y * size + 1, size - 2, size - 2);
     if (ghost) {
       ctx.strokeStyle = colors[value];
@@ -154,9 +154,9 @@ function setupBlockGame(widget) {
   };
 
   const render = () => {
-    context.fillStyle = "#191a17";
+    context.fillStyle = "#0c1120";
     context.fillRect(0, 0, 300, 600);
-    context.strokeStyle = "#292b25";
+    context.strokeStyle = "#1b2940";
     for (let x = 0; x <= 10; x++) {
       context.beginPath();
       context.moveTo(x * 30, 0);
@@ -176,7 +176,7 @@ function setupBlockGame(widget) {
       paintPiece(context, game.piece, game.x, ghostY, 30, true);
       paintPiece(context, game.piece, game.x, game.y, 30);
     }
-    previewContext.fillStyle = "#191a17";
+    previewContext.fillStyle = "#0c1120";
     previewContext.fillRect(0, 0, 120, 120);
     paintPiece(previewContext, game.next, (4 - game.next.length) / 2, 0.5, 30);
     const names = ["", "I", "J", "L", "O", "S", "T", "Z"];
@@ -196,7 +196,7 @@ function setupBlockGame(widget) {
     };
     if (status.textContent !== messages[game.state]) status.textContent = messages[game.state];
     if (game.state !== "running") {
-      context.fillStyle = "rgba(25, 26, 23, 0.78)";
+      context.fillStyle = "rgba(12, 17, 32, 0.82)";
       context.fillRect(0, 0, 300, 600);
       context.fillStyle = "#f5f5f2";
       context.font = "600 24px sans-serif";

@@ -20,11 +20,13 @@ PyTorch, and Hugging Face learning resources, and suggested practice projects.
 Edit that file to update the roadmap and resource links. Both pages share
 `styles.css` and `script.js`; the game script loads only on the homepage.
 
-## Game widget
+## Game showcase and widget
 
-The Play section includes an original Tetris-style falling-block game with a
-10-by-20 board, seven-piece shuffled bags, a next-piece preview, a landing ghost,
-line-clear scoring, and increasing speed every ten lines.
+The Play section uses an original, storefront-inspired showcase and CSS artwork
+to introduce an original Tetris-style falling-block game. The game has a 10-by-20
+board, seven-piece shuffled bags, a next-piece preview, a landing ghost,
+line-clear scoring, and increasing speed every ten lines. It is an unofficial
+browser tribute and does not use PlayStation Store artwork or assets.
 
 Click **Start game** and use the arrow keys to move/rotate, Space to drop, and P
 to pause. On-screen buttons also work on touch devices. Keyboard controls are

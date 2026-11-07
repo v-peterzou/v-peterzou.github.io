@@ -107,12 +107,53 @@
       <section class="play section-wrap" id="play" aria-labelledby="play-title">
         <div class="section-label">
           <span class="section-number">03</span>
-          <span>A LITTLE BREAK</span>
+          <span>PLAY SOMETHING</span>
         </div>
         <div class="play-content">
-          <h2 id="play-title">One more block<span class="period">.</span></h2>
-          <p class="play-intro">A small falling-block game. Stack, clear, repeat.</p>
-          <div class="game-widget" aria-label="Falling-block game">
+          <div class="game-product">
+            <div class="game-product-hero">
+              <div class="game-art" aria-hidden="true">
+                <span class="art-grid"></span>
+                <span class="art-glow"></span>
+                <span class="art-piece art-piece--line"><i></i><i></i><i></i><i></i></span>
+                <span class="art-piece art-piece--corner"><i></i><i></i><i></i><i></i></span>
+                <span class="art-piece art-piece--step"><i></i><i></i><i></i><i></i></span>
+                <span class="art-piece art-piece--square"><i></i><i></i><i></i><i></i></span>
+                <span class="art-caption">A LITTLE COLOR. A LOT OF FLOW.</span>
+              </div>
+              <div class="game-product-copy">
+                <p class="product-kicker"><span></span> INTERACTIVE PUZZLE · PLAY IN BROWSER</p>
+                <h2 id="play-title">Tetris Effect:<br><span>Connected</span></h2>
+                <p class="product-description">
+                  A familiar falling-block puzzle, reimagined as a small, luminous
+                  browser experience. Find your rhythm, clear a line, and see what
+                  comes next.
+                </p>
+                <div class="product-tags" aria-label="Game details">
+                  <span>Single player</span>
+                  <span>Keyboard + touch</span>
+                  <span>Free to play</span>
+                </div>
+                <a class="product-play" href="#gameplay">
+                  Play now <span aria-hidden="true">↓</span>
+                </a>
+                <p class="product-note">An unofficial browser-made tribute to falling-block games.</p>
+              </div>
+            </div>
+            <div class="product-highlights" aria-label="Game features">
+              <div><span>01</span><strong>Easy to pick up</strong><p>Move, rotate, and drop with a few simple controls.</p></div>
+              <div><span>02</span><strong>Keep the flow</strong><p>Clear rows to score and watch the pace build.</p></div>
+              <div><span>03</span><strong>One more round</strong><p>Every new game brings a fresh sequence of pieces.</p></div>
+            </div>
+          </div>
+          <div class="game-widget" id="gameplay" aria-label="Falling-block game">
+            <div class="game-widget-heading">
+              <div>
+                <p class="product-kicker"><span></span> YOUR NEXT ROUND</p>
+                <h3>Ready when you are<span class="period">.</span></h3>
+              </div>
+              <span class="game-player-count">1 PLAYER</span>
+            </div>
             <div class="game-layout">
               <canvas id="game-board" width="300" height="600" tabindex="0"
                 role="img" aria-label="Game board, 10 columns by 20 rows"
